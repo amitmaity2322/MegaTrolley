@@ -54,7 +54,7 @@ getProductData().then(data => {
   const query = sessionStorage.getItem("searchQuery");
 
   if (query) {
-    const filtered = products.filter(p =>
+    const filtered = allProducts.filter(p =>
       p.product_name.toLowerCase().includes(query.toLowerCase())
     );
     window.filteredProducts = filtered;
@@ -62,9 +62,9 @@ getProductData().then(data => {
     renderPaginationButtons(filtered.length);
     sessionStorage.removeItem("searchQuery"); // clear it after use
   } else {
-    window.filteredProducts = products;
-    renderPaginatedProducts(products);
-    renderPaginationButtons(products.length);
+    window.filteredProducts = allProducts;
+    renderPaginatedProducts(allProducts);
+    renderPaginationButtons(allProducts.length);
   }
 
 
