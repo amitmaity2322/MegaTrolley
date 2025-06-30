@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img alt="logo" src="images/logo.svg"></a>
+        <button class="navbar-toggler order-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="d-flex">
+        <div class="navbar-collapse side-nav  " id="navbarSupportedContent">
+            <button class="close-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="d-lg-flex justify-content-between align-items-center mt-5 mt-lg-0">
+                <div class="d-flex gap-4">
+                    <ul class="navbar-nav mb-3 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+           
+            <div class="search-icon cursor-pointer"><img src="images/search.svg" alt="Search"></div>
+            <div class="position-relative top-cart cursor-pointer">
+                <a href="wishlist.html">
+                    <img alt="wishlist" src="images/wishlist.svg">
+                </a>
+                <span class=" position-absolute rounded-circle" id="wishlist-count">0</span>
+        </div>
+        <div><img alt="user" src="images/user.svg"></div>
+        <div class="position-relative top-cart">
+            <a href="cart.html" data-discover="true"><img alt="cart" src="images/cart.svg"></a>
+            <span class=" position-absolute rounded-circle" id="cart-count">0</span>
+        </div>
+
+       
+</div>
+</div>
+</div>
+</nav>
+
+<!-- Search popup (on every page) -->
+<div id="search-popup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:9999; align-items:center; justify-content:center;">
+    <div style="background:white; padding:20px; max-width:400px; width:100%; position:relative;">
+      <button id="search-close" style="position:absolute; top:10px; right:10px;">✖</button>
+      <input type="text" id="search-input" placeholder="Search for products..." style="width:100%; padding:10px;">
+      <button id="search-submit" style="margin-top:10px; width:100%; padding:10px;">Search</button>
+    </div>
+  </div>
+
+    
+  
+
