@@ -17,6 +17,10 @@ getProductData().then(data => {
   const featured = data.featured_products;
   const allProducts = [...products, ...featured];
 
+  // allProducts.forEach(p => {
+  //   console.log("product_type:", p.product_type, "category:", p.category);
+  // });
+
   const productContainer = document.getElementById('product-list');
   const featuredContainer = document.getElementById('featured-list');
   const allProductContainer = document.getElementById('all-product-list');
@@ -26,6 +30,9 @@ getProductData().then(data => {
 
   //const products = [...data.products, ...data.featured_products];
   window.allProducts = products;
+
+  let productsToRender = allProducts;
+  
 
   if (productContainer) {
     products.forEach(p => {
@@ -40,44 +47,58 @@ getProductData().then(data => {
   }
 
   if (allProductContainer) {
-    // 🔄 1. Render full list at once
-    allProducts.forEach(p => {
+    allProductContainer.innerHTML = ""; // Clear existing products
+    productsToRender.forEach(p => {
       allProductContainer.insertAdjacentHTML('beforeend', generateProductCard(p));
     });
-
-    // ✅ 2. Call filters only once
+  
+    // ✅ Call filters based on all products
     initCategoryFilter(allProducts);
     initPriceFilter(allProducts);
     initSizeFilter(allProducts);
   }
 
+  //const query = sessionStorage.getItem("searchQuery");
+
   const query = sessionStorage.getItem("searchQuery");
 
-  if (query) {
-    const filtered = allProducts.filter(p =>
-      p.product_name.toLowerCase().includes(query.toLowerCase())
-    );
-    window.filteredProducts = filtered;
-    renderPaginatedProducts(filtered);
-    renderPaginationButtons(filtered.length);
-    sessionStorage.removeItem("searchQuery"); // clear it after use
-  } else {
-    window.filteredProducts = allProducts;
-    renderPaginatedProducts(allProducts);
-    renderPaginationButtons(allProducts.length);
-  }
+if (query) {
+  productsToRender = allProducts.filter(p =>
+  p.product_name.toLowerCase().includes(query.toLowerCase()) ||
+    p.product_type.toLowerCase().includes(query.toLowerCase()) ||
+    p.category.toLowerCase().includes(query.toLowerCase())
+  );
+}
 
+console.log("Search query:", query);
+// allProducts.forEach(p => {
+//   if (
+//     (p.product_type && p.product_type.toLowerCase().includes(query.toLowerCase())) ||
+//     (p.category && p.category.toLowerCase().includes(query.toLowerCase()))
+//   ) {
+//     console.log("MATCH:", p.product_name, "type:", p.product_type, "category:", p.category);
+//   }
+// });
+
+// const query = "bag";
+// const test = allProducts.filter(p =>
+//   p.product_type && p.product_type.toLowerCase().includes(query.toLowerCase())
+// );
+// console.log("Found from product_type:", test);
+
+
+
+  window.filteredProducts = productsToRender;
+  renderPaginatedProducts(productsToRender);         // ✅ render filtered data
+  renderPaginationButtons(productsToRender.length);
 
   attachWishlistListeners(); // This needs to be here for initial page load
   attachCartListeners();
   updateCartCount();
   updateWishlistCount(); // Ensure this is called on initial load
-  // ✅ 4. Setup pagination
-  renderPaginatedProducts(allProducts);
-  renderPaginationButtons(allProducts.length);
+
+  
 });
-
-
 
 
 function generateProductCard(product) {
@@ -940,46 +961,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   const cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-//   if (cart.length === 0) {
-//     document.getElementById("checkout-items").innerHTML = "<p>Your cart is empty.</p>";
-//     return;
-//   }
-
-//   let subtotal = 0;
-//   cart.forEach(product => {
-//     subtotal += product.price * product.quantity;
-
-//     const itemHtml = `
-    
-
-//       <div class="checkout-item">
-//       <div class="checkout-grid mt-4">
-//                     <div class="d-flex align-items-center">
-//                         <div class="check-img me-3">
-//                             <img alt="The Kezia Band Ring" src="${product.image}">
-//                         </div>
-//                             <div><p class="font-weight300 font-size12">${product.name} <span class="font-weight500">(x${product.quantity})</span></p>
-//                                 <p class="font-size12 font-weight500 pt-2">$${(product.price * product.quantity).toFixed(2)}</p>
-//                             </div>
-//                         </div>
-//                         <div class="text-end ">$${(product.price * product.quantity).toFixed(2)}</div>
-//                     </div>
-
-       
-//       </div>
-//     `;
-//     document.getElementById("checkout-items").insertAdjacentHTML("beforeend", itemHtml);
-//   });
-
-//   document.getElementById("checkout-subtotal").textContent = `$${subtotal.toFixed(2)}`;
-//   document.getElementById("checkout-total").textContent = `$${subtotal.toFixed(2)}`;
-// });
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("checkout-items");
   const subtotalElem = document.getElementById("checkout-subtotal");
@@ -1027,20 +1008,52 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   const query = sessionStorage.getItem("searchQuery");
-//   if (query && window.allProducts) {
-//     const filtered = allProducts.filter(p =>
-//       p.product_name.toLowerCase().includes(query.toLowerCase())
-//     );
-//     renderPaginatedProducts(filtered); // or your renderProducts()
-//     renderPaginationButtons(filtered.length);
-//     sessionStorage.removeItem("searchQuery");
-//   } else {
-//     renderPaginatedProducts(allProducts); // or default render
-//     renderPaginationButtons(allProducts.length);
-//   }
-// });
+
+function setupSearchPopup() {
+  const searchPopup = document.getElementById("search-popup");
+  const searchInput = document.getElementById("search-input");
+  const searchClose = document.getElementById("search-close");
+  const searchSubmit = document.getElementById("search-submit");
+  const searchIcon = document.querySelector(".search-icon");
+
+  if (searchIcon) {
+    searchIcon.addEventListener("click", () => {
+      if (searchPopup) searchPopup.style.display = "flex";
+      if (searchInput) searchInput.focus();
+    });
+  }
+
+  if (searchClose) {
+    searchClose.addEventListener("click", () => {
+      if (searchPopup) searchPopup.style.display = "none";
+    });
+  }
+
+
+  if (searchSubmit) {
+    searchSubmit.addEventListener("click", () => {
+      handleSearch(); // ✅ Fix: remove parameter
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") {
+        handleSearch(); // ✅ correct
+      }
+    });
+  }
+
+
+  function handleSearch() {
+    const query = searchInput?.value.trim();
+    if (query) {
+      sessionStorage.setItem("searchQuery", query); // ✅ Save
+      window.location.href = "shop.html";
+    }
+  }
+}
+
 
 
 

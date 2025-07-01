@@ -255,24 +255,6 @@
 <script src="js/productList.js"></script>
 <script src="js/navbar.js"></script>
 <script src="js/custom.js"></script>
-<!-- <script>
-   document.addEventListener("DOMContentLoaded", () => {
-  const allProducts = JSON.parse(localStorage.getItem("allProducts")) || [];
-  const searchQuery = sessionStorage.getItem("searchQuery");
 
-  let filteredProducts = allProducts;
-
-  if (searchQuery) {
-    filteredProducts = allProducts.filter(product =>
-      product.product_name.toLowerCase().includes(searchQuery.toLowerCase())
-    );
-
-    sessionStorage.removeItem("searchQuery"); // Clear it after use
-  }
-
-  renderPaginatedProducts(filteredProducts);
-  renderPaginationButtons(filteredProducts.length);
-});
-  </script> -->
 </body>
 </html>

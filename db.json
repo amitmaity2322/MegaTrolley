@@ -30,7 +30,27 @@
           { "id": 3, "url": "/images/product-1-2.png" },
           { "id": 4, "url": "/images/product-1-3.png" }
         ],
-        "handle":"Modern-Slim-Fit-Suit"
+        "productreview": [
+          { 
+            "id": 1, 
+            "images": "/images/review-1.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "date":"June 10, 2025"
+          },
+          { 
+            "id": 2, 
+            "images": "/images/review-1-1.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "updatedate":"June 10, 2025"
+          },
+          { 
+            "id": 3, 
+            "images": "/images/product-1-2.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "date":"June 10, 2025"
+          }
+        ]
+        
       },
           {
             "id":2,
@@ -62,7 +82,26 @@
           { "id": 3, "url": "/images/product-2-2.png" }
         
         ],
-            "handle":"elation-gold-women-bracelet"
+        "productreview": [
+          { 
+            "id": 1, 
+            "images": "/images/review-1.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "date":"June 10, 2025"
+          },
+          { 
+            "id": 2, 
+            "images": "/images/review-1-1.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "updatedate":"June 10, 2025"
+          },
+          { 
+            "id": 3, 
+            "images": "/images/product-1-2.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "date":"June 10, 2025"
+          }
+        ]
           },
           {
             "id":3,
@@ -94,7 +133,26 @@
           { "id": 2, "url": "/images/product-3-1.png" }
          
         ],
-            "handle":"eloral-essence-diamond-pendant"
+         "productreview": [
+          { 
+            "id": 1, 
+            "images": "/images/review-1.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "date":"June 10, 2025"
+          },
+          { 
+            "id": 2, 
+            "images": "/images/review-1-1.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "updatedate":"June 10, 2025"
+          },
+          { 
+            "id": 3, 
+            "images": "/images/product-1-2.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "date":"June 10, 2025"
+          }
+        ]
           },
           {
             "id":4,
@@ -125,7 +183,26 @@
           { "id": 2, "url": "/images/product-4-1.png" }
          
         ],
-            "handle":"glazing-diamond-stud-earrings"
+         "productreview": [
+          { 
+            "id": 1, 
+            "images": "/images/review-1.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "date":"June 10, 2025"
+          },
+          { 
+            "id": 2, 
+            "images": "/images/review-1-1.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "updatedate":"June 10, 2025"
+          },
+          { 
+            "id": 3, 
+            "images": "/images/product-1-2.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "date":"June 10, 2025"
+          }
+        ]
           },
           {
             "id":5,
@@ -157,7 +234,26 @@
           { "id": 3, "url": "/images/product-5-2.png" }
          
         ],
-            "handle":"nancy-glow-diamond-pendant"
+        "productreview": [
+          { 
+            "id": 1, 
+            "images": "/images/review-1.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "date":"June 10, 2025"
+          },
+          { 
+            "id": 2, 
+            "images": "/images/review-1-1.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "updatedate":"June 10, 2025"
+          },
+          { 
+            "id": 3, 
+            "images": "/images/product-1-2.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "date":"June 10, 2025"
+          }
+        ]
           },
           {
             "id":6,
@@ -189,7 +285,26 @@
           { "id": 2, "url": "/images/product-6-2.png" }
          
         ],
-            "handle":"sparkle-stitch-diamond-bracelet"
+        "productreview": [
+          { 
+            "id": 1, 
+            "images": "/images/review-1.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "date":"June 10, 2025"
+          },
+          { 
+            "id": 2, 
+            "images": "/images/review-1-1.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "updatedate":"June 10, 2025"
+          },
+          { 
+            "id": 3, 
+            "images": "/images/product-1-2.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "date":"June 10, 2025"
+          }
+        ]
           },
           {
             "id":7,
@@ -220,7 +335,26 @@
          
           
         ],
-            "handle":"tyra-heart-diamond-ring"
+         "productreview": [
+          { 
+            "id": 1, 
+            "images": "/images/review-1.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "date":"June 10, 2025"
+          },
+          { 
+            "id": 2, 
+            "images": "/images/review-1-1.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "updatedate":"June 10, 2025"
+          },
+          { 
+            "id": 3, 
+            "images": "/images/product-1-2.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "date":"June 10, 2025"
+          }
+        ]
           },
           {
             "id":8,
@@ -252,7 +386,26 @@
           { "id": 2, "url": "/images/product-8-1.png" },
           { "id": 3, "url": "/images/product-8-2.png" }
         ],
-            "handle":"gold-drop-earrings"
+          "productreview": [
+          { 
+            "id": 1, 
+            "images": "/images/review-1.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "date":"June 10, 2025"
+          },
+          { 
+            "id": 2, 
+            "images": "/images/review-1-1.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "updatedate":"June 10, 2025"
+          },
+          { 
+            "id": 3, 
+            "images": "/images/product-1-2.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "date":"June 10, 2025"
+          }
+        ]
           }
     ],
 
@@ -286,7 +439,26 @@
           { "id": 3, "url": "/images/product-9-2.png" }
           
         ],
-  "handle":"lillian-diamond-stud-earrings"
+  "productreview": [
+          { 
+            "id": 1, 
+            "images": "/images/review-1.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "date":"June 10, 2025"
+          },
+          { 
+            "id": 2, 
+            "images": "/images/review-1-1.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "updatedate":"June 10, 2025"
+          },
+          { 
+            "id": 3, 
+            "images": "/images/product-1-2.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "date":"June 10, 2025"
+          }
+        ]
 },
 {
   "id":10,
@@ -317,7 +489,26 @@
           { "id": 1, "url": "/images/product-10.png" }
           
         ],
-  "handle":"glinting-leaves-diamond-ring"
+ "productreview": [
+          { 
+            "id": 1, 
+            "images": "/images/review-1.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "date":"June 10, 2025"
+          },
+          { 
+            "id": 2, 
+            "images": "/images/review-1-1.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "updatedate":"June 10, 2025"
+          },
+          { 
+            "id": 3, 
+            "images": "/images/product-1-2.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "date":"June 10, 2025"
+          }
+        ]
 },
 {
   "id":11,
@@ -350,7 +541,26 @@
           
           
         ],
-  "handle":"xena-diamond-pendant-chain"
+ "productreview": [
+          { 
+            "id": 1, 
+            "images": "/images/review-1.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "date":"June 10, 2025"
+          },
+          { 
+            "id": 2, 
+            "images": "/images/review-1-1.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "updatedate":"June 10, 2025"
+          },
+          { 
+            "id": 3, 
+            "images": "/images/product-1-2.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "date":"June 10, 2025"
+          }
+        ]
 },
 {
   "id":12,
@@ -384,7 +594,26 @@
          
          
         ],
-  "handle":"order-women-pendant"
+  "productreview": [
+          { 
+            "id": 1, 
+            "images": "/images/review-1.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "date":"June 10, 2025"
+          },
+          { 
+            "id": 2, 
+            "images": "/images/review-1-1.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "updatedate":"June 10, 2025"
+          },
+          { 
+            "id": 3, 
+            "images": "/images/product-1-2.png",
+            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "date":"June 10, 2025"
+          }
+        ]
 }
 ]
 

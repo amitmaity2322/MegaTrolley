@@ -35,45 +35,7 @@ function updateCartCount() {
 }
 
 // ✅ Setup search popup events AFTER navbar is loaded
-function setupSearchPopup() {
-  const searchPopup = document.getElementById("search-popup");
-  const searchInput = document.getElementById("search-input");
-  const searchClose = document.getElementById("search-close");
-  const searchSubmit = document.getElementById("search-submit");
-  const searchIcon = document.querySelector(".search-icon");
 
-  if (searchIcon) {
-    searchIcon.addEventListener("click", () => {
-      if (searchPopup) searchPopup.style.display = "flex";
-      if (searchInput) searchInput.focus();
-    });
-  }
 
-  if (searchClose) {
-    searchClose.addEventListener("click", () => {
-      if (searchPopup) searchPopup.style.display = "none";
-    });
-  }
 
-  if (searchSubmit) {
-    searchSubmit.addEventListener("click", () => {
-      handleSearch(searchInput);
-    });
-  }
 
-  if (searchInput) {
-    searchInput.addEventListener("keypress", (e) => {
-      if (e.key === "Enter") {
-        handleSearch(searchInput);
-      }
-    });
-  }
-
-  function handleSearch() {
-    const query = searchInput?.value.trim();
-    if (query) {
-      sessionStorage.setItem("searchQuery", query); // Save the query temporarily
-      window.location.href = "shop.html";
-    }
-  }
-}

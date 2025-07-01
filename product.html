@@ -117,9 +117,9 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="produ-descr font-size24 font-weight500 font-family1 mb-2">
-                    <span class="tab-btn active me-5" data-tab="description">Description</span>
-                    <span class="tab-btn me-5" data-tab="additional">Additional information</span>
-                    <span data-tab="reviews" class="tab-btn">Reviews (10)</span>
+                    <span class="tab-btn active me-5 cursor-pointer" data-tab="description">Description</span>
+                    <span class="tab-btn me-5 cursor-pointer" data-tab="additional">Additional information</span>
+                    <span data-tab="reviews" class="tab-btn cursor-pointer">Reviews</span>
                 </div>
                 <div class="produ-descr-box font-size14 font-weight300 pt-4">
                 <div id="tab-description" class="tab-content">
@@ -137,11 +137,62 @@
                </div>
 
                <div id="tab-additional" class="tab-content d-none">
-                <p>This product is made from 100% organic materials. Wash gently.</p>
+                <h5 class="font-family1 font-size18 pb-2">1. Wide Range of Products</h5>
+                <p>MegaTrolley offers a carefully curated collection of products across multiple categories, including groceries, home essentials, electronics, fashion, beauty, and more. We collaborate with trusted brands and suppliers to ensure our customers get the best quality at competitive prices. Whether you're stocking up for the month or browsing for a last-minute gift, MegaTrolley makes it simple and accessible.
+
+                </p>
+                <h5 class="font-family1 font-size18 pb-2 pt-4">2. Customer-Centric Approach</h5>
+                <p>Our customers are at the heart of everything we do. From intuitive navigation to real-time order tracking, our platform is designed for a smooth and stress-free experience. Our dedicated customer support team is always ready to assist with inquiries, returns, or suggestions. Your feedback helps us grow, improve, and serve you better every day.
+                </p>
+
+                <h5 class="font-family1 font-size18 pb-2 pt-4">3. Fast Delivery & Secure Shopping</h5>
+                <p>We understand the importance of time and trust in online shopping. That’s why MegaTrolley ensures fast and reliable delivery services across regions. All transactions are protected with advanced encryption, and your personal information is kept secure at every step. Shop with confidence knowing you’re in safe hands with MegaTrolley.
+                </p>
               </div>
 
               <div id="tab-reviews" class="tab-content d-none">
-                <p>Here are customer reviews:</p>
+                <div class="product-reviews">
+                   
+                    <div class="review-item">
+                      <div class="review-header">
+                        <div class="review-stars">★★★★★</div>
+                        <div class="review-meta d-flex justify-content-between py-1">
+                          <strong class="reviewer-name">Emma Johnson</strong>
+                          <span class="review-date">June 10, 2025</span>
+                          
+                        </div>
+                      </div>
+                      <p class="review-text">I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures. I’ve used it for over a week now and it’s performing perfectly. Delivery was quicker than expected and the packaging was very secure. MegaTrolley really nailed it with this one – will definitely be returning for more orders!</p>
+                    </div>
+                    <div class="review-item">
+                        <div class="review-header">
+                          <div class="review-stars">★★★★★</div>
+                          <div class="review-meta d-flex justify-content-between py-1">
+                            <strong class="reviewer-name">James M</strong>
+                            <span class="review-date">June 12, 2025</span>
+                            
+                          </div>
+                        </div>
+                        <p class="review-text">Overall, I’m happy with my purchase. The product looks beautiful and exactly matches the description. It came neatly packed with no damage. However, I’m giving four stars because the size was slightly smaller than expected, so make sure to check the measurements carefully. Still, the look and quality are amazing for the price. I’ve already recommended this to a few friends.</p>
+                      </div>
+
+                      <div class="review-item">
+                        <div class="review-header">
+                          <div class="review-stars">★★★★★</div>
+                          <div class="review-meta d-flex justify-content-between py-1">
+                            <strong class="reviewer-name">Daniel M</strong>
+                            <span class="review-date">June 16, 2025</span>
+                            
+                          </div>
+                        </div>
+                        <p class="review-text">The product itself is decent — not great, not terrible. What disappointed me a little was the packaging, which came slightly torn, and the delivery took longer than what was promised. The item functions okay, but I expected better from the brand. Customer support did respond to my issue, though, which I appreciate. Hopefully future purchases will be smoother.</p>
+                      </div>
+                    
+                  
+                    
+                  
+                  </div>
+                  
                 <div id="reviews-list"></div>
               </div>
 
