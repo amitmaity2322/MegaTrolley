@@ -17,10 +17,6 @@ getProductData().then(data => {
   const featured = data.featured_products;
   const allProducts = [...products, ...featured];
 
-  // allProducts.forEach(p => {
-  //   console.log("product_type:", p.product_type, "category:", p.category);
-  // });
-
   const productContainer = document.getElementById('product-list');
   const featuredContainer = document.getElementById('featured-list');
   const allProductContainer = document.getElementById('all-product-list');
@@ -32,6 +28,7 @@ getProductData().then(data => {
   window.allProducts = products;
 
   let productsToRender = allProducts;
+  
   
 
   if (productContainer) {
@@ -58,7 +55,6 @@ getProductData().then(data => {
     initSizeFilter(allProducts);
   }
 
-  //const query = sessionStorage.getItem("searchQuery");
 
   const query = sessionStorage.getItem("searchQuery");
 
@@ -71,21 +67,6 @@ if (query) {
 }
 
 console.log("Search query:", query);
-// allProducts.forEach(p => {
-//   if (
-//     (p.product_type && p.product_type.toLowerCase().includes(query.toLowerCase())) ||
-//     (p.category && p.category.toLowerCase().includes(query.toLowerCase()))
-//   ) {
-//     console.log("MATCH:", p.product_name, "type:", p.product_type, "category:", p.category);
-//   }
-// });
-
-// const query = "bag";
-// const test = allProducts.filter(p =>
-//   p.product_type && p.product_type.toLowerCase().includes(query.toLowerCase())
-// );
-// console.log("Found from product_type:", test);
-
 
 
   window.filteredProducts = productsToRender;
@@ -107,7 +88,7 @@ function generateProductCard(product) {
 
   // Ensure product.mrp_price is formatted as a number for display
   const displayPrice = parseFloat(product.mrp_price).toFixed(2);
-
+  const markedPrice = parseFloat(product.marked_price).toFixed(2);
 
   // Get current wishlist data from localStorage
   const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
@@ -121,6 +102,12 @@ function generateProductCard(product) {
 
   return `<div class="${columnClass} col-6 main-product">
       <div class="product-box position-relative">
+      ${
+        (product.id === 3 || product.id === 8)
+          ? `<div class="position-absolute mark_discount font-size12">${product.mark_discount}</div>`
+          : ''
+      }
+      
         <div class="position-absolute rounded-circle product_wishlist cursor-pointer text-center ${activeClass}" data-id="${product.id}">
           <img alt="wishlist" src="images/wishlist.svg" class="wishlist-icon-img">
         </div>
@@ -142,8 +129,14 @@ function generateProductCard(product) {
         </div>
         <h4 class="color-grayBlack font-size16 font-weight400 pt-1">${product.product_name}</h4>
         <div class="d-flex pt-1">
-          <p class="font-weight400 font-size16">$${displayPrice}</p>
-        </div>
+          <p class="font-weight400 font-size16 me-2">$${displayPrice}</p>
+          ${
+            (product.id === 3 || product.id === 8)
+              ? `<p class="text-decoration-line-through text-muted font-weight400 font-size16 ">$${markedPrice}</p>`
+              : ''
+          }
+          
+          </div>
       </div>
     </div>`;
 }
@@ -203,14 +196,23 @@ function goToProductDetails(productId) {
   window.location.href = `product.html?id=${productId}`;
 }
 
+
 document.addEventListener("DOMContentLoaded", () => {
   const urlParams = new URLSearchParams(window.location.search);
   const productId = urlParams.get("id");
-
+  console.log("Stored productId:", productId);
   if (productId) {
     getProductData().then(data => {
       const allProducts = [...data.products, ...data.featured_products];
       const currentProduct = allProducts.find(p => p.id == productId);
+      const selectedProduct = allProducts.find(p => p.id == productId);
+
+      if (selectedProduct) {
+              renderProductDetails(selectedProduct); // If you have this
+              renderProductReviews(selectedProduct.productreview); // ✅ Your review section rendering
+            } else {
+              console.warn("Product not found");
+            }
 
       if (currentProduct) {
         renderProductDetails(currentProduct);
@@ -325,6 +327,8 @@ function renderProductDetails(product) {
   document.querySelectorAll('.styling-tips').forEach(el => {
     el.textContent = product.styling_tips;
   });
+
+ 
 
   const featuresContainer = document.querySelector('.product-features');
 
@@ -832,9 +836,15 @@ function renderWishlist() {
 
   wishlist.forEach(product => {
     const displayPrice = parseFloat(product.mrp_price).toFixed(2);
+    const markedPrice = parseFloat(product.marked_price).toFixed(2);
     const html = `
       <div class="col-md-3 col-6 main-product">
         <div class="product-box position-relative">
+         ${
+        (product.id === 3 || product.id === 8)
+          ? `<div class="position-absolute mark_discount font-size12">${product.mark_discount}</div>`
+          : ''
+      }
           <div class="position-absolute rounded-circle product_wishlist cursor-pointer text-center remove-from-wishlist-x" data-id="${product.id}">
             <i class="fa-solid fa-xmark"></i>
           </div>
@@ -847,7 +857,12 @@ function renderWishlist() {
           </div>
           <h4 class="color-grayBlack font-size16 font-weight400 pt-1">${product.product_name}</h4>
           <div class="d-flex pt-1">
-            <p class="font-weight400 font-size16">$${displayPrice}</p>
+            <p class="font-weight400 font-size16 me-2">$${displayPrice}</p>
+            ${
+              (product.id === 3 || product.id === 8)
+                ? `<p class="text-decoration-line-through text-muted font-weight400 font-size16 ">$${markedPrice}</p>`
+                : ''
+            }
           </div>
           <div class="my-2">
             <button class="add-to-cart-btn w-100 wishlist-btn font-size14"
@@ -942,23 +957,23 @@ function attachMoveToCart() {
 }
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  const checkoutBtn = document.querySelector(".cart-btn");
+// document.addEventListener("DOMContentLoaded", () => {
+//   const checkoutBtn = document.querySelector(".cart-btn");
 
-  if (checkoutBtn) {
-    checkoutBtn.addEventListener("click", () => {
-      // Optional: Check if cart has items
-      const cart = JSON.parse(localStorage.getItem("cart")) || [];
-      if (cart.length === 0) {
-        alert("Your cart is empty!");
-        return;
-      }
+//   if (checkoutBtn) {
+//     checkoutBtn.addEventListener("click", () => {
+//       // Optional: Check if cart has items
+//       const cart = JSON.parse(localStorage.getItem("cart")) || [];
+//       if (cart.length === 0) {
+//         alert("Your cart is empty!");
+//         return;
+//       }
 
-      // Redirect to checkout page
-      window.location.href = "checkout.html";
-    });
-  }
-});
+//       // Redirect to checkout page
+//       window.location.href = "checkout.html";
+//     });
+//   }
+// });
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -1053,6 +1068,67 @@ function setupSearchPopup() {
     }
   }
 }
+
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   const productId = sessionStorage.getItem("selectedProductId");
+//   console.log("Stored productId:", productId);
+
+//   getProductData().then(data => {
+//     const allProducts = [...data.products, ...data.featured_products];
+//     console.log("Loaded all products:", allProducts);
+
+//     const selectedProduct = allProducts.find(p => p.id == productId);
+//     console.log("Selected product:", selectedProduct);
+
+//     if (selectedProduct) {
+//       renderProductDetails(selectedProduct);
+//       renderProductReviews(selectedProduct.productreview);
+//     } else {
+//       console.warn("Product not found");
+//     }
+//   });
+// });
+
+
+
+function renderProductReviews(reviews) {
+  const container = document.getElementById("review-section");
+  if (!container || !reviews || reviews.length === 0) {
+    container.innerHTML = "<p>No reviews available.</p>";
+    return;
+  }
+
+  container.innerHTML = ""; // Clear existing content
+
+  reviews.forEach(review => {
+    const html = `
+      <div class="review-item">
+        <div class="review-header d-flex justify-content-between align-items-center">
+          <div class="d-flex align-items-center">
+              <div><img src="${review.images}" class="review-img me-2"></div>
+              <div>
+                  <div class="review-stars mb-1">★★★★★</div>
+                  <strong class="reviewer-name">${review.proName}</strong>
+              </div>
+          </div>
+          <div class="review-meta py-1">
+            <span class="review-date">${review.date || review.updatedate}</span>
+          </div>
+        </div>
+        <p class="review-text pt-2">${review.text}</p>
+      </div>
+    `;
+    container.insertAdjacentHTML("beforeend", html);
+  });
+}
+
+
+// if (!sessionStorage.getItem("user")) {
+//   alert("Please login before placing order.");
+//   window.location.href = "login.html"; // or show modal
+// }
+
 
 
 

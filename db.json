@@ -8,7 +8,7 @@
         "marked_price": "82.50",
         "image_url": "/images/product-1.png",
         "default_size": "L",
-        "mark_discount":"-10%",
+        "mark_discount":"SALE!",
         "stock":"16",
         "quantity": 1,              
         "currency": "$",
@@ -33,21 +33,24 @@
         "productreview": [
           { 
             "id": 1, 
-            "images": "/images/review-1.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "images": "/images/review-1.jpg",
+            "proName":"Emma Johnson",
+            "text":"I bought the Modern Slim Fit Suit for a formal event, and it exceeded all expectations. The fit is sleek and flattering without feeling too tight. The fabric feels premium and breathable—perfect for all-day wear. I received multiple compliments throughout the night. Highly recommended for anyone looking for a stylish and sharp look!",
             "date":"June 10, 2025"
           },
           { 
             "id": 2, 
-            "images": "/images/review-1-1.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "updatedate":"June 10, 2025"
+            "images": "/images/review-1-1.jpg",
+            "proName":"Olivia Martinez",
+            "text":"I was a little hesitant to order a suit online, but this one fits like it was tailored for me. The cut is modern and professional, and it pairs well with both dress shoes and sneakers. I wore it to a wedding and felt super confident.",
+            "updatedate":"June 15, 2025"
           },
           { 
             "id": 3, 
-            "images": "/images/product-1-2.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "date":"June 10, 2025"
+            "images": "/images/review-1-2.jpg",
+            "proName":"Amelia Brown",
+            "text":"The suit looks much more expensive than it actually is. The material is lightweight and ideal for warm weather. I only gave 4 stars because I had to get the sleeves slightly altered, but overall, a fantastic purchase.",
+            "date":"June 17, 2025"
           }
         ]
         
@@ -60,7 +63,7 @@
             "marked_price": "121.00",
             "image_url": "/images/product-2.png",
             "default_size": "M",
-            "mark_discount":"-10%",
+            "mark_discount":"SALE!",
             "stock":"16",
             "quantity": 1,              
              "currency": "$",
@@ -85,21 +88,24 @@
         "productreview": [
           { 
             "id": 1, 
-            "images": "/images/review-1.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "date":"June 10, 2025"
+            "images": "/images/review-2.jpg",
+            "proName":"Michael P.",
+            "text":"This jacket gets me compliments every time I wear it! The patches give it such a unique vibe, and the denim quality is thick but soft. It fits true to size and works great with casual outfits.",
+            "date":"June 09, 2025"
           },
           { 
             "id": 2, 
-            "images": "/images/review-1-1.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "updatedate":"June 10, 2025"
+            "images": "/images/review-2-1.jpg",
+            "proName":"David R.",
+            "text":"I love the overall look and feel—especially the edgy patches! Just a heads up: it’s a bit oversized, but that worked perfectly for my street-style aesthetic.",
+            "updatedate":"June 07, 2025"
           },
           { 
             "id": 3, 
-            "images": "/images/product-1-2.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "date":"June 10, 2025"
+            "images": "/images/review-2-2.jpg",
+            "proName":"Jonathan K.",
+            "text":"Absolutely love this piece! The detailing on the patches is super well-done, and the washed denim has a premium feel. Great for layering over tees or hoodies.",
+            "date":"June 11, 2025"
           }
         ]
           },
@@ -111,7 +117,7 @@
             "marked_price":"60.00",
             "image_url": "/images/product-3.png",
             "default_size": "S",
-            "mark_discount":"-10%",
+            "mark_discount":"SALE!",
             "stock":"16",
             "quantity": 1,              
            "currency": "$",
@@ -136,21 +142,24 @@
          "productreview": [
           { 
             "id": 1, 
-            "images": "/images/review-1.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "date":"June 10, 2025"
+            "images": "/images/review-3.jpg",
+            "proName":"Luna Brooks",
+            "text":"This dress is absolutely beautiful. The floral pattern is soft and romantic, and the fabric moves like a dream. Perfect for brunch, a garden party, or even a date night. I felt so confident wearing it!",
+            "date":"June 01, 2025"
           },
           { 
             "id": 2, 
-            "images": "/images/review-1-1.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "updatedate":"June 10, 2025"
+            "images": "/images/review-3-1.jpg",
+            "proName":"Nova Bennett",
+            "text":"I loved how this midi dress hugged my waist and flared gently at the bottom. It’s true to size, and the colors are even prettier in person. Just wish the sleeves had a little more stretch.",
+            "updatedate":"June 22, 2025"
           },
           { 
             "id": 3, 
-            "images": "/images/product-1-2.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "date":"June 10, 2025"
+            "images": "/images/review-3-2.jpg",
+            "proName":"Freya Morgan",
+            "text":"Wore this to a summer wedding and got endless compliments. It’s light, breathable, and the floral design isn’t too loud—just the right amount of charm.",
+            "date":"June 15, 2025"
           }
         ]
           },
@@ -162,7 +171,7 @@
             "marked_price": "88.00",
             "image_url": "/images/product-4.png",
             "default_size": "XS",
-            "mark_discount":"-10%",
+            "mark_discount":"SALE!",
             "stock":"16",
             "quantity": 1,              
              "currency": "$",
@@ -186,21 +195,24 @@
          "productreview": [
           { 
             "id": 1, 
-            "images": "/images/review-1.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "date":"June 10, 2025"
+            "images": "/images/review-4.jpg",
+            "proName":"Grayson M.",
+            "text":"This denim jacket is a staple in my wardrobe now. It has that classic vintage feel but fits perfectly with today’s trends. I wear it over dresses, tees, and even hoodies. Super versatile!",
+            "date":"June 11, 2025"
           },
           { 
             "id": 2, 
-            "images": "/images/review-1-1.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "updatedate":"June 10, 2025"
+            "images": "/images/review-4-1.jpg",
+            "proName":"William C.",
+            "text":"The fabric is thick and feels durable. The stitching is neat, and it’s surprisingly warm for a denim jacket. I gave 4 stars only because I wish it had an inside pocket.",
+            "updatedate":"June 13, 2025"
           },
           { 
             "id": 3, 
-            "images": "/images/product-1-2.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "date":"June 10, 2025"
+            "images": "/images/review-4-2.jpg",
+            "proName":"David S.",
+            "text":"I’ve been searching for a good denim jacket, and this one is just perfect. The wash is stylish, and the fit is slightly oversized—exactly how I like it.",
+            "date":"June 16, 2025"
           }
         ]
           },
@@ -212,7 +224,7 @@
             "marked_price": "99.00",
             "image_url": "/images/product-5.png",
             "default_size": "XS",
-            "mark_discount":"-10%",
+            "mark_discount":"SALE!",
             "stock":"16",
             "quantity": 1,             
           "currency": "$",
@@ -237,20 +249,23 @@
         "productreview": [
           { 
             "id": 1, 
-            "images": "/images/review-1.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "date":"June 10, 2025"
+            "images": "/images/review-5.jpg",
+            "proName":"Emily R",
+            "text":"This sweater is like wearing a warm hug. The knit is super soft and not scratchy at all. It’s oversized but still flattering. Perfect with leggings or jeans.",
+            "date":"June 02, 2025"
           },
           { 
             "id": 2, 
-            "images": "/images/review-1-1.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "updatedate":"June 10, 2025"
+            "images": "/images/review-5-1.jpg",
+            "proName":"Jessica L",
+            "text":"I love the chunky knit and the slouchy sleeves. It’s cozy without being too heavy. Lost one star because it took a week to arrive, but otherwise, it’s perfect!",
+            "updatedate":"June 06, 2025"
           },
           { 
             "id": 3, 
-            "images": "/images/product-1-2.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
+            "images": "/images/review-5-2.jpg",
+            "proName":"Rachel K",
+            "text":"I’ve worn this almost every day since I got it. It’s perfect for layering and goes great with boots. The oatmeal color is gorgeous in person.",
             "date":"June 10, 2025"
           }
         ]
@@ -262,7 +277,7 @@
             "mrp_price": "45.90",
             "marked_price":"119.90",
             "image_url": "/images/product-6.png",
-            "mark_discount":"-10%",
+            "mark_discount":"SALE!",
             "stock":"16",
             "quantity": 1,              
          "currency": "$",
@@ -288,21 +303,24 @@
         "productreview": [
           { 
             "id": 1, 
-            "images": "/images/review-1.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "date":"June 10, 2025"
+            "images": "/images/review-6.jpg",
+            "proName":"Jason M.",
+            "text":"The red color pops beautifully and doesn’t fade after washing. The fabric is breathable and super soft—perfect for summer wear. Got tons of compliments!",
+            "date":"June 23, 2025"
           },
           { 
             "id": 2, 
-            "images": "/images/review-1-1.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "updatedate":"June 10, 2025"
+            "images": "/images/review-6-1.jpg",
+            "proName":"Brian S.",
+            "text":"Really comfy and easy to wear. I pair it with jeans or joggers, and it always works. Slightly looser than expected, but still looks good.",
+            "updatedate":"June 15, 2025"
           },
           { 
             "id": 3, 
-            "images": "/images/product-1-2.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "date":"June 10, 2025"
+            "images": "/images/review-6-2.jpg",
+            "proName":"Tyler J.",
+            "text":"This Red Rasual T-shirt has become my favorite. The fit is modern, not too tight or baggy, and the material feels premium for the price.",
+            "date":"June 12, 2025"
           }
         ]
           },
@@ -313,7 +331,7 @@
             "mrp_price": "48.00",
             "marked_price": "97.90",
             "image_url": "/images/product-7.png",
-            "mark_discount":"-10%",
+            "mark_discount":"SALE!",
             "stock":"16",
             "quantity": 1,              
            "currency": "$",
@@ -338,21 +356,24 @@
          "productreview": [
           { 
             "id": 1, 
-            "images": "/images/review-1.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "date":"June 10, 2025"
+            "images": "/images/review-7.jpg",
+            "proName":"Olivia W.",
+            "text":"This dress is a total showstopper. The lace detail is so delicate and high-quality. I wore it to a formal dinner and felt like a movie star. It hugs all the right places without being too tight.",
+            "date":"June 30, 2025"
           },
           { 
             "id": 2, 
-            "images": "/images/review-1-1.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "updatedate":"June 10, 2025"
+            "images": "/images/review-7-1.jpg",
+            "proName":"Ashley M.",
+            "text":"The design is gorgeous, and the lace feels soft—not scratchy. I had to size up for a comfortable fit around the bust, but once I did, it was perfect.",
+            "updatedate":"June 27, 2025"
           },
           { 
             "id": 3, 
-            "images": "/images/product-1-2.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "date":"June 10, 2025"
+            "images": "/images/review-7-2.jpg",
+            "proName":"Lauren B.",
+            "text":"I wore this to my friend’s engagement party and got so many compliments. The length is perfect—classy without being too modest—and the color was exactly like the photo.",
+            "date":"June 23, 2025"
           }
         ]
           },
@@ -364,7 +385,7 @@
             "marked_price":"70.00",
             "image_url": "/images/product-8.png",
             "default_size": "XL",
-            "mark_discount":"-10%",
+            "mark_discount":"SALE!",
             "stock":"16",
             "quantity": 1,             
          "currency": "$",
@@ -389,21 +410,24 @@
           "productreview": [
           { 
             "id": 1, 
-            "images": "/images/review-1.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "date":"June 10, 2025"
+            "images": "/images/review-8.jpg",
+            "proName":"Daniel R.",
+            "text":"This hoodie is my go-to for chilly mornings. The fleece inside is incredibly soft, and it keeps me warm without being too bulky. Fits perfectly too!",
+            "date":"June 03, 2025"
           },
           { 
             "id": 2, 
-            "images": "/images/review-1-1.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "updatedate":"June 10, 2025"
+            "images": "/images/review-8-1.jpg",
+            "proName":"Eric T.",
+            "text":"I wear this hoodie to the gym, to run errands, or just lounge at home. It’s comfy and durable. Just wish it came in more color options.",
+            "updatedate":"June 05, 2025"
           },
           { 
             "id": 3, 
-            "images": "/images/product-1-2.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "date":"June 10, 2025"
+            "images": "/images/review-8-2.jpg",
+            "proName":"Jake M.",
+            "text":"Sometimes you just need a classic hoodie that works with anything—and this one nails it. The fit is relaxed but not sloppy, and the material feels premium.",
+            "date":"June 07, 2025"
           }
         ]
           }
@@ -418,7 +442,7 @@
   "marked_price": "99.00",
   "image_url": "/images/product-9.png",
   "default_size": "XXL",
-  "mark_discount":"-10%",
+  "mark_discount":"SALE!",
   "stock":"16",
   "quantity": 1,
         "currency": "$",
@@ -442,21 +466,24 @@
   "productreview": [
           { 
             "id": 1, 
-            "images": "/images/review-1.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "date":"June 10, 2025"
+            "images": "/images/review-9.jpg",
+            "proName":"Alex D.",
+            "text":"This bomber jacket looks even better in person. It has that perfect balance of sporty and sophisticated. Fits true to size, and the zippers feel sturdy.",
+            "date":"June 12, 2025"
           },
           { 
             "id": 2, 
-            "images": "/images/review-1-1.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "updatedate":"June 10, 2025"
+            "images": "/images/review-9-1.jpg",
+            "proName":"Marcus H.",
+            "text":"Love the lightweight feel. It’s warm enough for cool evenings but not bulky. The inner lining is smooth and comfortable. Lost a star because I wish it had an inside pocket.",
+            "updatedate":"June 17, 2025"
           },
           { 
             "id": 3, 
-            "images": "/images/product-1-2.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "date":"June 10, 2025"
+            "images": "/images/review-9-2.jpg",
+            "proName":"Jordan C.",
+            "text":"I wear this jacket everywhere—work, dinner, weekend trips. It fits like a glove and gives off a clean, urban vibe. Got compliments the first day I wore it.",
+            "date":"June 29, 2025"
           }
         ]
 },
@@ -468,7 +495,7 @@
   "marked_price": "77.00",
   "image_url": "/images/product-10.png",
   "default_size": "M",
-  "mark_discount":"-10%",
+  "mark_discount":"SALE!",
   "stock":"16",
   "quantity": 1,             
         "currency": "$",
@@ -492,21 +519,24 @@
  "productreview": [
           { 
             "id": 1, 
-            "images": "/images/review-1.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "date":"June 10, 2025"
+            "images": "/images/review-10.jpg",
+            "proName":"Amanda W.",
+            "text":"These cargo shorts are durable, flexible, and have plenty of pocket space for all the little things my son insists on carrying. They hold up great after lots of play and washes!",
+            "date":"June 12, 2025"
           },
           { 
             "id": 2, 
-            "images": "/images/review-1-1.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "updatedate":"June 10, 2025"
+            "images": "/images/review-10-1.jpg",
+            "proName":"Daniel T.",
+            "text":"My 9-year-old loves these! The fit is just right—not too tight, not too baggy—and the fabric is breathable. One pocket button came loose after a few washes, but easy to fix.",
+            "updatedate":"June 18, 2025"
           },
           { 
             "id": 3, 
-            "images": "/images/product-1-2.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "date":"June 10, 2025"
+            "images": "/images/review-10-2.jpg",
+            "proName":"Stephanie R.",
+            "text":"Bought two pairs for my twin boys, and they both love them. They’re comfortable for running around and still look good enough for casual outings. Big win!",
+            "date":"June 20, 2025"
           }
         ]
 },
@@ -518,7 +548,7 @@
   "marked_price":"165.00",
   "image_url": "/images/product-11.png",
   "default_size": "XS",
-  "mark_discount":"-10%",
+  "mark_discount":"SALE!",
   "stock":"16",
   "quantity": 1,             
         "currency": "$",
@@ -544,21 +574,24 @@
  "productreview": [
           { 
             "id": 1, 
-            "images": "/images/review-1.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "date":"June 10, 2025"
+            "images": "/images/review-11.jpg",
+            "proName":"Isha M",
+            "text":"This shirt is a closet essential. The stripes are clean and subtle—perfect for both work and casual wear. The fabric feels breathable, and it tucks in nicely without bunching.",
+            "date":"June 11, 2025"
           },
           { 
             "id": 2, 
-            "images": "/images/review-1-1.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "updatedate":"June 10, 2025"
+            "images": "/images/review-11-1.jpg",
+            "proName":"Aria Bennett",
+            "text":"Love the style and the lightweight material. Just a heads-up: it has a slim fit through the torso, so size up if you prefer a relaxed feel. Still a great shirt overall!",
+            "updatedate":"June 18, 2025"
           },
           { 
             "id": 3, 
-            "images": "/images/product-1-2.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "date":"June 10, 2025"
+            "images": "/images/review-11-2.jpg",
+            "proName":"Aurora S.",
+            "text":"I bought this for a family gathering and ended up wearing it to a business dinner too. Looks sharp with jeans or chinos. Got compliments both times!",
+            "date":"June 21, 2025"
           }
         ]
 },
@@ -570,7 +603,7 @@
   "marked_price": "101.20",
   "image_url": "/images/product-12.png",
   "default_size": "L",
-  "mark_discount":"-10%",
+  "mark_discount":"SALE!",
   "stock":"16",
   "quantity": 1,              
         "currency": "$",
@@ -597,21 +630,24 @@
   "productreview": [
           { 
             "id": 1, 
-            "images": "/images/review-1.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "date":"June 10, 2025"
+            "images": "/images/review-12.jpg",
+            "proName":"Thomas J.",
+            "text":"This shirt is exactly what I needed—clean lines, perfect collar, and a flattering fit. Great for business casual looks or weekend outings. Fabric is soft but holds structure well.",
+            "date":"June 11, 2025"
           },
           { 
             "id": 2, 
-            "images": "/images/review-1-1.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "updatedate":"June 10, 2025"
+            "images": "/images/review-12-1.jpg",
+            "proName":"Andrew B.",
+            "text":"I've worn this shirt to the office and on casual Fridays. It’s versatile and lightweight, and the buttons feel securely stitched. Docking one star only because I prefer a slightly slimmer cut.",
+            "updatedate":"June 19, 2025"
           },
           { 
             "id": 3, 
-            "images": "/images/product-1-2.png",
-            "text":"I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures",
-            "date":"June 10, 2025"
+            "images": "/images/review-12-2.jpg",
+            "proName":"Kevin M.",
+            "text":"This button-down checks all the boxes: quality material, proper fit, and wrinkle resistance. It pairs great with dress pants or jeans. Ordering more colors soon!",
+            "date":"June 22, 2025"
           }
         ]
 }

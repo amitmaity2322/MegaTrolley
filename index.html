@@ -5,7 +5,8 @@
    <title>MegaTrolley</title>
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -32,7 +33,7 @@
   <div class="section-slider home-slider" >
     <div class="container h-100">
             <div class="text-white midel-div justify-content-center d-flex h-100">
-                <div class="mobile-w-100 deskto-w-48 color-grayBlack">
+                <div class="mobile-w-100 deskto-w-48 color-grayBlack mobil-only">
                     <h2 class="subheading padd-bott-30">Ethereal Elegance</h2>
                     <h1 class="padd-bott-30">Bold Shades, Refined Simplicity</h1>
                     <p class="padd-bott-30 bann-par">MegaTrolley offers top products at great prices with fast shipping and easy returns. From home to tech, shop it all in one click.</p>
@@ -43,13 +44,13 @@
             </div>
         </div>
 </div>
-<div class="section-slider home-slider" >
+<div class="section-slider section-slider2 home-slider" >
     <div class="container h-100">
             <div class="text-white midel-div justify-content-center d-flex h-100">
-                <div class="mobile-w-100 deskto-w-48 color-grayBlack">
-                    <h2 class="subheading padd-bott-30">Ethereal Elegance</h2>
-                    <h1 class="padd-bott-30">Bold Shades, Refined Simplicity</h1>
-                    <p class="padd-bott-30 bann-par">MegaTrolley offers top products at great prices with fast shipping and easy returns. From home to tech, shop it all in one click.</p>
+                <div class="mobile-w-100 deskto-w-48 color-grayBlack mobil-only">
+                    <h2 class="subheading padd-bott-30">Luminous Serenity</h2>
+                    <h1 class="padd-bott-30">Striking Hues, Effortless Grace</h1>
+                    <p class="padd-bott-30 bann-par">MegaTrolley brings you the best deals on everything from gadgets to home essentials—fast delivery and hassle-free returns included.</p>
                     <a href="shop.html" class="btn btn-primary banner-btn">Shop Now</a>
                     
                 </div>
@@ -134,7 +135,7 @@
 
 
 <section class="category-section">
-    <div class="container text-center head-all pb-5">
+    <div class="container text-center head-all pb-4 pb-md-5">
         <h2 class="font-family1 font-size34 color-grayBlack">Shop By Category</h2>
      </div>
     <div class="container">
@@ -212,6 +213,13 @@
       <iframe id="videoFrame" src="" frameborder="0" allowfullscreen allow="autoplay"></iframe>
     </div>
   </div>
+
+  <div id="videoModal" class="video-modal">
+  <div class="video-modal-content">
+    <span class="video-close"><i class="fa-solid fa-xmark"></i></span>
+    <video id="videoElement" controls></video>
+  </div>
+</div>
    
 </section>
 <section class="product-section">
@@ -248,9 +256,9 @@
                         </div>
                         <span class="ps-2 font-weight500">Coats</span>
                     </div>
-                    <div class="testimonials-ic rounded-circle">
+                    <a href="shop.html" class="testimonials-ic rounded-circle">
                        <img src="images/bag-icon.svg" alt="">
-                    </div>
+                    </a>
                 </div>
                 </div>
                 <div class="bg-white testi-box">
@@ -268,9 +276,9 @@
                             </div>
                             <span class="ps-2 font-weight500">Jackets</span>
                         </div>
-                        <div class="testimonials-ic rounded-circle">
+                        <a href="shop.html" class="testimonials-ic rounded-circle">
                            <img src="images/bag-icon.svg" alt="">
-                        </div>
+                        </a>
                     </div>
                     </div>
                     <div class="bg-white testi-box">
@@ -288,9 +296,9 @@
                                 </div>
                                 <span class="ps-2 font-weight500">Kids Accessories</span>
                             </div>
-                            <div class="testimonials-ic rounded-circle">
+                            <a href="shop.html" class="testimonials-ic rounded-circle">
                                <img src="images/bag-icon.svg" alt="">
-                            </div>
+                            </a>
                         </div>
                         </div>
 
@@ -309,9 +317,9 @@
                                     </div>
                                     <span class="ps-2 font-weight500">T-shirts</span>
                                 </div>
-                                <div class="testimonials-ic rounded-circle">
+                                <a href="shop.html" class="testimonials-ic rounded-circle">
                                    <img src="images/bag-icon.svg" alt="">
-                                </div>
+                                </a>
                             </div>
                             </div>
 
@@ -333,41 +341,53 @@
     </div>
     <div class="container">
        <div class="display-grid instagram-column">
-        <div class="instagram">
+        <div class="instagram cursor-pointer">
+            <a href="https://www.instagram.com/" target="_blank">
             <img src="images/instagram1-1x.jpg" srcset="images/instagram1-2x.jpg 2x, images/instagram1-3x.jpg 3x" alt="Instagram">
             <div class="instagram-icon text-center">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <i class="fa-brands fa-instagram"></i>
             </div>
+            </a>
           </div>
-          <div class="instagram">
+          <div class="instagram cursor-pointer">
+            <a href="https://www.instagram.com/" target="_blank">
             <img src="images/instagram2-1x.jpg" srcset="images/instagram2-2x.jpg 2x, images/instagram2-3x.jpg 3x" alt="Instagram">
             <div class="instagram-icon text-center">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <i class="fa-brands fa-instagram"></i>
             </div>
+        </a>
           </div>
-          <div class="instagram">
+          <div class="instagram cursor-pointer">
+            <a href="https://www.instagram.com/" target="_blank">
             <img src="images/instagram3-1x.jpg" srcset="images/instagram3-2x.jpg 2x, images/instagram3-3x.jpg 3x" alt="Instagram">
             <div class="instagram-icon text-center">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+               <i class="fa-brands fa-instagram"></i>
             </div>
+            </a>
           </div>
-          <div class="instagram">
+          <div class="instagram cursor-pointer">
+            <a href="https://www.instagram.com/" target="_blank">
             <img src="images/instagram4-1x.jpg" srcset="images/instagram4-2x.jpg 2x, images/instagram4-3x.jpg 3x" alt="Instagram">
             <div class="instagram-icon text-center">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <i class="fa-brands fa-instagram"></i>
             </div>
+           </a>
           </div>
-          <div class="instagram">
+          <div class="instagram cursor-pointer">
+            <a href="https://www.instagram.com/" target="_blank">
             <img src="images/instagram5-1x.jpg" srcset="images/instagram5-2x.jpg 2x, images/instagram5-3x.jpg 3x" alt="Instagram">
             <div class="instagram-icon text-center">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <i class="fa-brands fa-instagram"></i>
             </div>
+           </a>
           </div>
-          <div class="instagram">
+          <div class="instagram cursor-pointer">
+            <a href="https://www.instagram.com/" target="_blank">
             <img src="images/instagram6-1x.jpg" srcset="images/instagram6-2x.jpg 2x, images/instagram6-3x.jpg 3x" alt="Instagram">
             <div class="instagram-icon text-center">
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+               <i class="fa-brands fa-instagram"></i>
             </div>
+            </a>
           </div>
           
        </div>
@@ -386,22 +406,22 @@
                     
                         <ul class="social-icon p-0 d-flex mt-4">
                             <li>
-                                <a href="https://www.facebook.com/">
+                                <a href="https://www.facebook.com/" target="_blank">
                                     <i class="fa-brands fa-facebook-f"></i> 
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/">
+                                <a href="https://www.instagram.com/" target="_blank">
                                     <i class="fa-brands fa-instagram"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.youtube.com/">
+                                <a href="https://www.youtube.com/" target="_blank">
                                     <i class="fa-brands fa-youtube"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://in.linkedin.com/">
+                                <a href="https://in.linkedin.com/" target="_blank">
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
                             </li>
@@ -425,7 +445,7 @@
                     <div class="ftco-footer-widget mb-4 ml-md-5">
                         <h2 class="font-weight500 font-family1 font-size20 pb-3 pb-md-4">Quick Links</h2>
                         <ul>
-                            <li><a href="#">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="#">Shop</a></li>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">FAQ</a></li>
@@ -468,18 +488,33 @@
 <script src="js/productList.js"></script>
 <script src="js/navbar.js"></script>
 <script src="js/custom.js"></script>
-<!-- <script>
-    document.addEventListener("DOMContentLoaded", () => {
-  const icon = document.querySelector(".search-icon");
-  console.log("Loaded:", icon); // This should not be null
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const trigger = document.querySelector(".video-trigger");
+  const modal = document.getElementById("videoModal");
+  const iframe = document.getElementById("videoFrame");
+  const closeBtn = document.querySelector(".video-close");
 
-  if (icon) {
-    icon.addEventListener("click", () => {
-      console.log("Search icon clicked!");
-    });
-  }
+  trigger.addEventListener("click", () => {
+    const videoUrl = trigger.getAttribute("data-video");
+    iframe.src = videoUrl;
+    modal.style.display = "block";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    iframe.src = ""; // Stop video
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      iframe.src = "";
+      modal.style.display = "none";
+    }
+  });
 });
-</script> -->
+
+</script> 
 
 </body>
 </html>

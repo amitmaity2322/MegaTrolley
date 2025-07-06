@@ -1,8 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-light ">
     <div class="container">
         <a class="navbar-brand" href="index.html"><img alt="logo" src="images/logo.svg"></a>
-        <button class="navbar-toggler order-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        
         <div class="d-flex">
+          <button class="navbar-toggler order-3 ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="navbar-collapse side-nav  " id="navbarSupportedContent">
             <button class="close-btn">
                 <i class="fa-solid fa-xmark"></i>
@@ -10,7 +11,7 @@
             <div class="d-lg-flex justify-content-between align-items-center mt-5 mt-lg-0">
                 <div class="d-flex gap-4">
                     <ul class="navbar-nav mb-3 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
@@ -28,11 +29,23 @@
                 </a>
                 <span class=" position-absolute rounded-circle" id="wishlist-count">0</span>
         </div>
-        <div><img alt="user" src="images/user.svg"></div>
+        <!-- 👤 User Icon -->
+
         <div class="position-relative top-cart">
             <a href="cart.html" data-discover="true"><img alt="cart" src="images/cart.svg"></a>
             <span class=" position-absolute rounded-circle" id="cart-count">0</span>
         </div>
+
+        <div class="user-icon  cursor-pointer " id="user-btn"  >
+  <img alt="user" src="images/user.svg" id="user-icon-img">
+  <div class="user-dropdown position-relative hidden" style="display: inline-block;">
+  <span id="user-greeting" class="rounded-circle"></span>
+  
+  <div id="dropdown-menu" class="dropdownMenu hidden">
+    <button id="logout-btn"><i class="fa-solid fa-arrow-right-from-bracket me-1"></i> Logout</button>
+  </div>
+  </div>
+</div>
 
        
 </div>
@@ -41,14 +54,61 @@
 </nav>
 
 <!-- Search popup (on every page) -->
-<div id="search-popup" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-  background: rgba(0,0,0,0.8); z-index: 9999; align-items: center; justify-content: center;">
-  <div style="background: white; padding: 20px; max-width: 400px; width: 100%; position: relative;">
-    <button id="search-close" style="position: absolute; top: 10px; right: 10px;">✖</button>
-    <input type="text" id="search-input" placeholder="Search for products..." style="width: 100%; padding: 10px;">
-    <button id="search-submit" style="margin-top: 10px; width: 100%; padding: 10px;">Search</button>
+<div id="search-popup" class="searchPopup">
+  <div class="searchPopup-box">
+    <button id="search-close"><i class="fa-solid fa-xmark"></i></button>
+    <div class="d-flex justify-content-between">
+    <input type="text" id="search-input" placeholder="Search for products..." >
+    <button id="search-submit">Search</button>
+    </div>
+   
   </div>
 </div>
+
+
+<!-- Login Modal -->
+<!-- 🔐 Auth Modal -->
+<div id="auth-modal" class="modal hidden">
+  <div class="modal-content">
+    <div class="row">
+        <div class="col-md-6 pe-md-0">
+          <img src="images/login1x.png" srcset="images/login2x.png 2x, images/login3x.png 3x" alt="login" class="d-none d-md-block">
+          <img src="images/login3x-mobile.jpg" alt="login" class="d-block d-md-none popup-radius">
+        </div>
+        <div class="col-md-6 ps-md-0 d-flex align-items-center justify-content-center">
+          <div id="login-form" class="form-box text-center">
+      <h3 class="font-size26 font-family1 pb-2">Login</h3>
+      <p class="font-size14 pb-2 pb-md-4">Welcome back! Please enter your details</p>
+      <input type="text" id="login-username" placeholder="Email"  />
+      <input type="password" id="login-password" placeholder="Password" />
+      <p id="login-error" style="color: red;"></p>
+      <button id="login-btn" class="font-size14 bgcolor-main mt-4">Login</button>
+      <p class="font-size12 signUpaccount">
+        Don't have an account? <a href="#" id="show-signup" class="color-main">Sign up</a>
+      </p>
+    </div>
+
+    <div id="signup-form" class="form-box hidden text-center">
+      <h3 class="font-size26 font-family1 pb-2">Sign Up</h3>
+      <p class="font-size14 pb-2 pb-md-4">Welcome back! Please enter your details</p>
+      <input type="text" id="signup-name" placeholder="Name"  />
+      <input type="email" id="signup-email" placeholder="Email" />
+      <input type="password" id="signup-password" placeholder="Password"  />
+      <p id="signup-error" style="color: red;"></p>
+      <button id="signup-btn" class="font-size14 bgcolor-main mt-4">Sign Up</button>
+      <p class="font-size12 signUpaccount">
+        Already have an account? <a href="#" id="show-login" class="color-main">Login</a>
+      </p>
+    </div>
+        </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
 
     
   

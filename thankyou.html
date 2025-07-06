@@ -22,7 +22,60 @@
                 </div>
             </div>
         </div>
-        <div id="navbar-placeholder"></div>
+      <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img alt="logo" src="images/logo.svg"></a>
+        
+        <div class="d-flex">
+            <button class="navbar-toggler order-3 ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="navbar-collapse side-nav  " id="navbarSupportedContent">
+            <button class="close-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="d-lg-flex justify-content-between align-items-center mt-5 mt-lg-0">
+                <div class="d-flex gap-4">
+                    <ul class="navbar-nav mb-3 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+           
+            <div class="search-icon cursor-pointer"><img src="images/search.svg" alt="Search"></div>
+            <div class="position-relative top-cart cursor-pointer">
+                <a href="wishlist.html">
+                    <img alt="wishlist" src="images/wishlist.svg">
+                </a>
+                <span class=" position-absolute rounded-circle" id="wishlist-count">0</span>
+        </div>
+        <!-- 👤 User Icon -->
+
+        <div class="position-relative top-cart">
+            <a href="cart.html" data-discover="true"><img alt="cart" src="images/cart.svg"></a>
+            <span class=" position-absolute rounded-circle" id="cart-count">0</span>
+        </div>
+
+        <div class="user-icon  cursor-pointer " id="user-btn"  >
+  <img alt="user" src="images/user.svg" id="user-icon-img">
+  <div class="user-dropdown position-relative hidden" style="display: inline-block;">
+  <span id="user-greeting" class="rounded-circle"></span>
+  
+  <div id="dropdown-menu" class="dropdownMenu hidden">
+    <button id="logout-btn"><i class="fa-solid fa-arrow-right-from-bracket me-1"></i> Logout</button>
+  </div>
+  </div>
+</div>
+
+       
+</div>
+</div>
+</div>
+</nav>
 
 <!-- -------------shop-start------- -->
 <!-- <div class="banner_all d-flex align-items-center">
@@ -38,7 +91,7 @@
 <section class="thankyou">
     <div class="container">
         <div class="row d-flex justify-content-center">
-            <div class="col-md-9">
+            <div class="col-lg-9">
                 <div class="thankyou-mid text-center">
                     <div class="fontSize40 font-weight500 font-family1">Thank You for Your Purchase!</div>
                     <p class="py-3">Your order has been successfully placed.</p>
@@ -105,7 +158,7 @@
                     <div class="ftco-footer-widget mb-4 ml-md-5">
                         <h2 class="font-weight500 font-family1 font-size20 pb-3 pb-md-4">Quick Links</h2>
                         <ul>
-                            <li><a href="#">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="#">Shop</a></li>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">FAQ</a></li>
@@ -143,10 +196,45 @@
 </section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-<script src="js/navbar.js"></script>
-<script src="js/custom.js"></script>
+<!-- <script src="js/navbar.js"></script> -->
+<!-- <script src="js/custom.js"></script> -->
 <script>
-    // Get orderId from URL query parameter
+     
+
+  function setupNavbarToggle() {
+    const toggleMenu = document.querySelector('.navbar-toggler');
+    const openMenu = document.querySelector('.side-nav');
+    const closeMenu = document.querySelector('.close-btn');
+
+    if (toggleMenu && openMenu && closeMenu) {
+      toggleMenu.addEventListener("click", () => {
+        openMenu.classList.toggle("open");
+      });
+      closeMenu.addEventListener("click", () => {
+        openMenu.classList.remove("open");
+      });
+    }
+  }
+
+  function NavbarActive() {
+const currentPage = window.location.pathname.split("/").pop(); // e.g. "about.html"
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+    navLinks.forEach(link => {
+      const linkPage = link.getAttribute("href");
+      if (linkPage === currentPage || (linkPage === "index.html" && currentPage === "")) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    setupNavbarToggle();
+    NavbarActive()
+  });
+   // Get orderId from URL query parameter
     const urlParams = new URLSearchParams(window.location.search);
     const orderId = urlParams.get('orderId');
 

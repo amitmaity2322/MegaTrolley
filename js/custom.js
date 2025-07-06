@@ -74,7 +74,15 @@ responsive: [
 {
   breakpoint: 1120,
   settings: {
-    slidesToShow: 6,
+    slidesToShow: 5,
+    dots: true,
+    arrows: false, // <-- corrected
+  },
+},
+{
+  breakpoint: 991,
+  settings: {
+    slidesToShow: 4,
     dots: true,
     arrows: false, // <-- corrected
   },
@@ -82,7 +90,7 @@ responsive: [
 {
   breakpoint: 768,
   settings: {
-    slidesToShow: 4,
+    slidesToShow: 3,
     dots: true,
     arrows: false, // <-- corrected
   },
@@ -121,32 +129,6 @@ filterToggle.addEventListener("click", () => {
 });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const trigger = document.querySelector(".video-trigger");
-  const modal = document.getElementById("videoModal");
-  const iframe = document.getElementById("videoFrame");
-  const closeBtn = document.querySelector(".video-close");
-
-  trigger.addEventListener("click", () => {
-    const videoUrl = trigger.getAttribute("data-video");
-    iframe.src = videoUrl;
-    modal.style.display = "block";
-  });
-
-  closeBtn.addEventListener("click", () => {
-    iframe.src = ""; // Stop video
-    modal.style.display = "none";
-  });
-
-  window.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      iframe.src = "";
-      modal.style.display = "none";
-    }
-  });
-});
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const query = sessionStorage.getItem("searchQuery");
@@ -166,6 +148,14 @@ document.addEventListener("DOMContentLoaded", () => {
     renderPaginationButtons(finalProducts.length);
   });
 });
+
+
+
+
+
+
+
+
 
 
 

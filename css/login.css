@@ -1,0 +1,99 @@
+body {
+    font-family: sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .auth-container {
+    background: #fff;
+   
+    width:900px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .auth-toggle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .auth-toggle button {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    background: #eee;
+    border: none;
+    transition: 0.3s;
+  }
+  
+  .auth-toggle .active {
+    background: #007bff;
+    color: white;
+  }
+  
+  .form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-box input {
+    padding: 10px;
+    border: 1px solid #525252;
+    border-radius: 0.313rem;
+    font-size: var(--fontSize14);
+  }
+  
+  .form-box button {
+    padding: 0.625rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.313rem;
+  }
+  
+
+  .login-section {
+    padding:0 50px;
+    width: 100%;
+}
+.signUpChange{
+    padding-top: 6rem;
+}
+
+.hidden { display: none; }
+.login-section {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.login-box {
+  background: white;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+.login-box input {
+  width: 100%; margin: 10px 0; padding: 10px;
+}
+.login-box button {
+  width: 100%; padding: 10px; background: #000; color: #fff; border: none;
+}
+.toggle-text {
+  margin-top: 10px;
+  text-align: center;
+  color: blue;
+  cursor: pointer;
+}
+
+
+

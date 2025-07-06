@@ -29,7 +29,7 @@
     <div class="container">
        <div class="">
          <!-- <h2 class="font-size30 font-family1">Shop</h2> -->
-         <h3 class="font-size16 font-weight300 pt-2">Home / Shop / <span class="color-main product-name"></span></h3>
+         <h3 class="font-size16 font-weight300 pt-2"><a href="index.html">Home</a> / <a href="shop.html">Shop</a> / <span class="color-main product-name"></span></h3>
        </div>
     </div>
 </div>
@@ -93,10 +93,10 @@
                     </div>
                 </div>
 
-                <div class="d-flex font-size14 mt-4 mb-2">
+                <!-- <div class="d-flex font-size14 mt-4 mb-2">
                     <img src="images/wishlist.svg" alt="wishlist" class="me-2">
                     Add To Wishlist
-                </div>
+                </div> -->
                 <div class="avail font-size16 pt-3 d-grid">
                      <span>SKU</span> 
                     <span>N/A</span>
@@ -117,8 +117,8 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="produ-descr font-size24 font-weight500 font-family1 mb-2">
-                    <span class="tab-btn active me-5 cursor-pointer" data-tab="description">Description</span>
-                    <span class="tab-btn me-5 cursor-pointer" data-tab="additional">Additional information</span>
+                    <span class="tab-btn active me-2 me-md-5 cursor-pointer" data-tab="description">Description</span>
+                    <span class="tab-btn me-2 me-md-5 cursor-pointer" data-tab="additional">Additional information</span>
                     <span data-tab="reviews" class="tab-btn cursor-pointer">Reviews</span>
                 </div>
                 <div class="produ-descr-box font-size14 font-weight300 pt-4">
@@ -151,47 +151,8 @@
               </div>
 
               <div id="tab-reviews" class="tab-content d-none">
-                <div class="product-reviews">
-                   
-                    <div class="review-item">
-                      <div class="review-header">
-                        <div class="review-stars">★★★★★</div>
-                        <div class="review-meta d-flex justify-content-between py-1">
-                          <strong class="reviewer-name">Emma Johnson</strong>
-                          <span class="review-date">June 10, 2025</span>
-                          
-                        </div>
-                      </div>
-                      <p class="review-text">I was a bit skeptical before ordering, but I’m genuinely impressed with the quality of this product. The material feels premium, and the finish is exactly as shown in the pictures. I’ve used it for over a week now and it’s performing perfectly. Delivery was quicker than expected and the packaging was very secure. MegaTrolley really nailed it with this one – will definitely be returning for more orders!</p>
-                    </div>
-                    <div class="review-item">
-                        <div class="review-header">
-                          <div class="review-stars">★★★★★</div>
-                          <div class="review-meta d-flex justify-content-between py-1">
-                            <strong class="reviewer-name">James M</strong>
-                            <span class="review-date">June 12, 2025</span>
-                            
-                          </div>
-                        </div>
-                        <p class="review-text">Overall, I’m happy with my purchase. The product looks beautiful and exactly matches the description. It came neatly packed with no damage. However, I’m giving four stars because the size was slightly smaller than expected, so make sure to check the measurements carefully. Still, the look and quality are amazing for the price. I’ve already recommended this to a few friends.</p>
-                      </div>
-
-                      <div class="review-item">
-                        <div class="review-header">
-                          <div class="review-stars">★★★★★</div>
-                          <div class="review-meta d-flex justify-content-between py-1">
-                            <strong class="reviewer-name">Daniel M</strong>
-                            <span class="review-date">June 16, 2025</span>
-                            
-                          </div>
-                        </div>
-                        <p class="review-text">The product itself is decent — not great, not terrible. What disappointed me a little was the packaging, which came slightly torn, and the delivery took longer than what was promised. The item functions okay, but I expected better from the brand. Customer support did respond to my issue, though, which I appreciate. Hopefully future purchases will be smoother.</p>
-                      </div>
-                    
-                  
-                    
-                  
-                  </div>
+                <div class="product-reviews" id="review-section">
+                </div>
                   
                 <div id="reviews-list"></div>
               </div>
@@ -263,7 +224,7 @@
                     <div class="ftco-footer-widget mb-4 ml-md-5">
                         <h2 class="font-weight500 font-family1 font-size20 pb-3 pb-md-4">Quick Links</h2>
                         <ul>
-                            <li><a href="#">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="#">Shop</a></li>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">FAQ</a></li>
@@ -325,6 +286,9 @@
         });
       });
     });
+
+  
+
     </script>
 </body>
 </html>
