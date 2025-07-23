@@ -909,6 +909,12 @@ a.nav-link.active {
     border: none;
     padding: 5.3px 0.625rem;
 }
+.view-cart:hover {
+    background-color: var(--color-main);
+}
+.view-cart:hover img{
+  filter: brightness(0) invert(1);
+}
   .product-box:hover .button-hover {
     opacity: 1;
     pointer-events: auto;
@@ -1047,6 +1053,10 @@ a.nav-link.active {
     height: 16px;
     top: 0.625rem;
     right: 0.625rem;
+}
+.category_slider a{
+    text-decoration: none;
+    color: var(--color-grayBlack);
 }
 
 
@@ -1467,6 +1477,13 @@ button.prodetail-btn1{
 
 
 /* ------------Cart------------- */
+.return_cart{
+    text-decoration: none;
+    color: #000000;
+}
+.return_cart:hover{
+    color: var(--color-main);
+}
 .cart_box{
     padding: 5rem 0;
 }
@@ -1524,9 +1541,9 @@ button.cart-btn{
     color: #fff;
 }
 .btn.banner-btn:hover{
-    border-color: #ffffff !important;
-    background-color: #ffffff !important;
-    color: #000000 !important;
+    border-color: #000000 !important;
+    background-color: #000000 !important;
+    color: #ffffff !important;
 }
 .remove{
     color: #F91010;

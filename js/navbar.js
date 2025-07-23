@@ -241,41 +241,79 @@ function setupAuthModal() {
     })
     .catch(err => {
       console.error(err);
-      errorEl.textContent = "Login failed. Try again.";
+      errorEl.textContent = "Please sign up";
     });
   });
 
   // 🧾 SIGNUP
-  signupBtn?.addEventListener("click", () => {
-    const name = document.getElementById("signup-name").value.trim();
-    const email = document.getElementById("signup-email").value.trim();
-    const password = document.getElementById("signup-password").value.trim();
-    const errorEl = document.getElementById("signup-error");
-    errorEl.textContent = "";
+  // signupBtn?.addEventListener("click", () => {
+  //   const name = document.getElementById("signup-name").value.trim();
+  //   const email = document.getElementById("signup-email").value.trim();
+  //   const password = document.getElementById("signup-password").value.trim();
+  //   const errorEl = document.getElementById("signup-error");
+  //    const successEl = document.getElementById("signup-success");
+  //   errorEl.textContent = "";
+  //   successEl.textContent = "";
 
-    fetch("https://api.escuelajs.co/api/v1/users", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        name,
-        email,
-        password,
-        avatar: "https://api.lorem.space/image/face?w=640&h=480"
-      })
+  //   fetch("https://api.escuelajs.co/api/v1/users", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify({
+  //       name,
+  //       email,
+  //       password,
+  //       avatar: "https://api.lorem.space/image/face?w=640&h=480"
+  //     })
+  //   })
+  //   .then(res => res.json())
+  //   .then(data => {
+  //     //alert("Signup successful! Please login.");
+  //     successEl.textContent = "Signup successful! Please login.";
+  //     signupForm.classList.add("hidden");
+  //     loginForm.classList.remove("hidden");
+  //   })
+  //   .catch(err => {
+  //     errorEl.textContent = "Signup failed. Try again.";
+  //     console.error(err);
+  //   });
+  // });
+
+  signupBtn?.addEventListener("click", () => {
+  const name = document.getElementById("signup-name").value.trim();
+  const email = document.getElementById("signup-email").value.trim();
+  const password = document.getElementById("signup-password").value.trim();
+  const errorEl = document.getElementById("signup-error");
+  const successEl = document.getElementById("signup-success");
+  errorEl.textContent = "";
+  successEl.textContent = "";
+
+  fetch("https://api.escuelajs.co/api/v1/users", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      name,
+      email,
+      password,
+      avatar: "https://api.lorem.space/image/face?w=640&h=480"
     })
+  })
     .then(res => res.json())
     .then(data => {
-      alert("Signup successful! Please login.");
-      signupForm.classList.add("hidden");
-      loginForm.classList.remove("hidden");
+      successEl.textContent = "Signup successful! Redirecting to login...";
+      setTimeout(() => {
+        signupForm.classList.add("hidden");
+        loginForm.classList.remove("hidden");
+        successEl.textContent = "";
+      }, 3000);
     })
     .catch(err => {
       errorEl.textContent = "Signup failed. Try again.";
       console.error(err);
     });
-  });
+});
 
-  // 🚪 Logout
+
+  // Logout
   logoutBtn?.addEventListener("click", () => {
     sessionStorage.removeItem("user");
     sessionStorage.removeItem("token");
