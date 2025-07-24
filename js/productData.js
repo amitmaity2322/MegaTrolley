@@ -1,4 +1,4 @@
-{
+const productData = {
     "products": [
       {
         "id": 1,
@@ -653,4 +653,4 @@
 }
 ]
 
-  }
+  };

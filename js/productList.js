@@ -1,14 +1,22 @@
 // ✅ Centralized function to fetch and cache data
+// function getProductData() {
+//   const cached = sessionStorage.getItem('cachedProductData');
+//   if (cached) return Promise.resolve(JSON.parse(cached));
+
+//   return fetch('db.json')
+//     .then(res => res.json())
+//     .then(data => {
+//       sessionStorage.setItem('cachedProductData', JSON.stringify(data));
+//       return data;
+//     });
+// }
+
 function getProductData() {
   const cached = sessionStorage.getItem('cachedProductData');
   if (cached) return Promise.resolve(JSON.parse(cached));
 
-  return fetch('db.json')
-    .then(res => res.json())
-    .then(data => {
-      sessionStorage.setItem('cachedProductData', JSON.stringify(data));
-      return data;
-    });
+  sessionStorage.setItem('cachedProductData', JSON.stringify(productData));
+  return Promise.resolve(productData);
 }
 
 
